@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="676.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.BillViewController">
+   <children>
+      <Separator layoutY="84.0" prefHeight="7.0" prefWidth="676.0" style="-fx-background-color: Royalblue;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Bloom />
+         </effect></Separator>
+      <ListView fx:id="lstAll" layoutX="14.0" layoutY="128.0" onMouseClicked="#doSelect" prefHeight="635.0" prefWidth="238.0" style="-fx-border-color: #4169e1;">
+         <effect>
+            <DropShadow />
+         </effect></ListView>
+      <Label layoutX="20.0" layoutY="101.0" prefHeight="31.0" prefWidth="230.0" style="-fx-text-fill: Royalblue;" text="All Customers" textFill="#f24949">
+         <font>
+            <Font name="Britannic Bold" size="31.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="274.0" layoutY="128.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+      <DatePicker fx:id="dateSD" layoutX="406.0" layoutY="149.0">
+         <effect>
+            <DropShadow />
+         </effect></DatePicker>
+      <DatePicker fx:id="dateED" layoutX="406.0" layoutY="203.0">
+         <effect>
+            <DropShadow />
+         </effect></DatePicker>
+      <Label layoutX="288.0" layoutY="149.0" prefHeight="29.0" prefWidth="114.0" text="Start Date">
+         <effect>
+            <Glow level="0.44" />
+         </effect></Label>
+      <Label layoutX="288.0" layoutY="205.0" prefHeight="29.0" prefWidth="114.0" text="End Date">
+         <effect>
+            <Glow level="0.44" />
+         </effect></Label>
+      <Button layoutX="290.0" layoutY="257.0" mnemonicParsing="false" onAction="#doGetDays" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #4169e1; -fx-text-fill: white;" text="Get Days" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="lbldiff" alignment="CENTER" layoutX="498.0" layoutY="262.0" prefHeight="21.0" prefWidth="127.0" text="Days" textAlignment="CENTER" wrapText="true">
+         <effect>
+            <Glow level="0.44" />
+         </effect></Label>
+      <Line endX="286.0" endY="-1.52587890625E-5" layoutX="375.0" layoutY="128.0" startX="-100.0" stroke="ROYALBLUE" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="121.0" layoutX="274.0" layoutY="354.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+      <Label layoutX="290.0" layoutY="374.0" prefHeight="31.0" prefWidth="55.0" text="CQty">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <Label layoutX="481.0" layoutY="374.0" prefHeight="31.0" prefWidth="55.0" text="BQty">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <Label layoutX="290.0" layoutY="424.0" prefHeight="31.0" prefWidth="55.0" text="Price">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <Label layoutX="482.0" layoutY="424.0" prefHeight="31.0" prefWidth="55.0" text="Price">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCQty" layoutX="352.0" layoutY="374.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtBQty" layoutX="536.0" layoutY="374.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtCPrice" layoutX="354.0" layoutY="424.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtBPrice" layoutX="538.0" layoutY="424.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Line endX="286.0" endY="-1.52587890625E-5" layoutX="375.0" layoutY="354.0" startX="-100.0" stroke="ROYALBLUE" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="114.0" layoutX="276.0" layoutY="497.0" opacity="0.16" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+      <Line endX="286.0" endY="-1.52587890625E-5" layoutX="377.0" layoutY="497.0" startX="-100.0" stroke="ROYALBLUE" strokeWidth="5.0" />
+      <Button alignment="CENTER" layoutX="424.0" layoutY="511.0" mnemonicParsing="false" onAction="#doGetVar" style="-fx-background-color: #4169e1; -fx-text-fill: white;" text="Get Variations" wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="298.0" layoutY="563.0" prefHeight="31.0" prefWidth="55.0" text="CQty">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <Label layoutX="489.0" layoutY="563.0" prefHeight="31.0" prefWidth="55.0" text="BQty">
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCQtyV" layoutX="360.0" layoutY="563.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtBQtyV" layoutX="544.0" layoutY="563.0" prefHeight="31.0" prefWidth="105.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Button alignment="CENTER" layoutX="444.0" layoutY="623.0" mnemonicParsing="false" onAction="#doGenBill" style="-fx-background-color: #4169e1; -fx-text-fill: white;" text="Gen. Bill" wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="txtAmnt" layoutX="386.0" layoutY="677.0" prefHeight="39.0" prefWidth="274.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="278.0" layoutY="677.0" prefHeight="31.0" prefWidth="105.0" text="Amount">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" layoutX="426.0" layoutY="732.0" mnemonicParsing="false" onAction="#doSaveSMS" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #4169e1; -fx-text-fill: white;" text="Save &amp; SMS" wrapText="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="75.0" fitWidth="200.0" layoutX="258.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@Bill.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

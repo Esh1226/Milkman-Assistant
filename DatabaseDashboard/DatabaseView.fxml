@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1046.0" style="-fx-background-color: white; -fx-border-color: white; -fx-border-width: 5; -fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DatabaseDashboard.DatabaseViewController">
+   <children>
+      <ImageView fitHeight="191.0" fitWidth="546.0" layoutX="399.0" pickOnBounds="true">
+         <image>
+            <Image url="@DashboardDesign.jpg" />
+         </image>
+         <effect>
+            <Glow level="0.33" />
+         </effect>
+      </ImageView>
+      <VBox prefHeight="691.0" prefWidth="308.0" style="-fx-border-color: Royalblue; -fx-border-width: 4; -fx-border-radius: 25;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#doBack" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Back" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView blendMode="LIGHTEN" fitHeight="38.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconfinder_left_4829874.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: Royalblue; -fx-border-radius: 100;">
+               <effect>
+                  <Glow />
+               </effect>
+            </Separator>
+            <Button mnemonicParsing="false" onAction="#doCustomerReg" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Customer Registration" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doVaritionEntry" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Variation Entry" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doGenerateBill" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Generate Bill" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doBillPayment" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Bill Payment" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doDeleteRecords" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Delete Record" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doLogout" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="Log Out" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doAboutUs" prefHeight="103.0" prefWidth="307.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 40; -fx-background-radius: 40;" text="About Us" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button contentDisplay="TOP" layoutX="360.0" layoutY="268.0" mnemonicParsing="false" onAction="#doCustomerHistory" prefHeight="100.0" prefWidth="275.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 25; -fx-background-radius: 25;" text="Customer History" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@CustomerHistory.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="535.0" layoutY="476.0" mnemonicParsing="false" onAction="#doVariationLog" prefHeight="100.0" prefWidth="275.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 25; -fx-background-radius: 25;" text="Variations Log" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@m.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="698.0" layoutY="268.0" mnemonicParsing="false" onAction="#doBillingConsole" prefHeight="100.0" prefWidth="275.0" style="-fx-background-color: royalblue; -fx-border-color: white; -fx-border-radius: 25; -fx-background-radius: 25;" text="Billing Console" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="124.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconfinder_00-ELASTOFONT-STORE-READY_invoice_2703075.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#247bcd" height="38.0" layoutX="306.0" layoutY="211.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: royalblue;" width="741.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <ImageView blendMode="LIGHTEN" fitHeight="32.0" fitWidth="32.0" layoutX="435.0" layoutY="214.0" pickOnBounds="true" rotate="-91.1">
+         <image>
+            <Image url="@iconfinder_left_4829874.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <Label fx:id="lbl" layoutX="333.0" layoutY="210.0" prefHeight="38.0" prefWidth="131.0" text="Database" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

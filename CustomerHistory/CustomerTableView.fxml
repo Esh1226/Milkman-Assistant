@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="950.0" style="-fx-background-color: white; -fx-border-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerHistory.CustomerTableViewController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="620.0" layoutY="182.0" mnemonicParsing="false" onAction="#dofindWithname" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: white; -fx-background-color: royalblue;" text="Show History" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TableView fx:id="tbl" layoutX="4.0" layoutY="260.0" prefHeight="378.0" prefWidth="943.0" style="-fx-background-color: white; -fx-border-color: royalblue; -fx-border-width: 2;">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <effect>
+            <Glow />
+         </effect>
+      </TableView>
+      <ComboBox fx:id="comboid" editable="true" layoutX="216.0" layoutY="186.0" prefHeight="31.0" prefWidth="292.0" />
+      <Label layoutX="70.0" layoutY="187.0" prefHeight="31.0" prefWidth="140.0" text="Customer Name" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="-2.0" prefHeight="74.0" prefWidth="463.0" style="-fx-border-color: royalblue;" text="Customer History" textFill="#4176e0" wrapText="true">
+         <font>
+            <Font name="Palatino Linotype Bold Italic" size="48.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="364.0" layoutY="658.0" mnemonicParsing="false" onAction="#doExport" prefHeight="50.0" prefWidth="225.0" style="-fx-border-color: white; -fx-background-color: royalblue;" text="Export To Excel" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Separator layoutX="1.0" layoutY="71.0" prefHeight="5.0" prefWidth="950.0" style="-fx-background-color: royalblue;" />
+      <Separator layoutX="1.0" layoutY="156.0" prefHeight="5.0" prefWidth="950.0" style="-fx-background-color: royalblue;" />
+      <Label layoutX="70.0" layoutY="99.0" prefHeight="31.0" prefWidth="140.0" text="Starting Date" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <DatePicker fx:id="dateSD" layoutX="215.0" layoutY="99.0" prefHeight="31.0" prefWidth="292.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="538.0" layoutY="96.0" mnemonicParsing="false" onAction="#doFindDate" prefHeight="37.0" prefWidth="169.0" style="-fx-border-color: white; -fx-background-color: royalblue;" text="Find" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="732.0" layoutY="96.0" mnemonicParsing="false" onAction="#dofetchall" prefHeight="31.0" prefWidth="169.0" style="-fx-border-color: white; -fx-background-color: royalblue;" text="Fetch All" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Separator layoutX="1.0" layoutY="243.0" prefHeight="5.0" prefWidth="950.0" style="-fx-background-color: royalblue;" />
+   </children>
+</AnchorPane>

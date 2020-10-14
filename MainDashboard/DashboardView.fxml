@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDashboard.DashboardViewController">
+   <children>
+      <Rectangle arcHeight="200.0" arcWidth="200.0" fill="WHITE" height="515.0" layoutX="54.0" layoutY="262.0" stroke="#2a68bfd1" strokeType="INSIDE" strokeWidth="5.0" width="1000.0">
+         <effect>
+            <DropShadow />
+         </effect></Rectangle>
+      <ImageView fitHeight="246.0" fitWidth="1081.0" pickOnBounds="true">
+         <image>
+            <Image url="@BGlogoDB.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="919.0" mnemonicParsing="false" onAction="#doLogout" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 50;" text="Log Out" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_glyph-20_3403739.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <ImageView fitHeight="154.0" fitWidth="409.0" layoutX="537.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LogoMilkMan.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Button contentDisplay="TOP" layoutX="117.0" layoutY="299.0" mnemonicParsing="false" onAction="#doCustomerReg" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Customer Registration" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_Application_46710.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.03" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="713.0" layoutY="299.0" mnemonicParsing="false" onAction="#doDatabase" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Database" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_data_115746.png" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <ColorAdjust brightness="1.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="416.0" layoutY="530.0" mnemonicParsing="false" onAction="#doBillPayment" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Bill Payment" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_payment_1954199.png" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <ColorAdjust brightness="1.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="416.0" layoutY="299.0" mnemonicParsing="false" onAction="#doVaritionEntry" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Variation Entry" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_UI_Basic_outline-65_4733197.png" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <ColorAdjust brightness="1.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="713.0" layoutY="530.0" mnemonicParsing="false" onAction="#doDeleteRecords" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Delete Records" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_circle-close_430088.png" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <ColorAdjust brightness="1.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="117.0" layoutY="530.0" mnemonicParsing="false" onAction="#doGenerateBill" prefHeight="204.0" prefWidth="276.0" style="-fx-background-color: #2a68bf; -fx-border-color: white; -fx-background-radius: 40; -fx-border-radius: 40;" text="Generate Bill" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+               <image>
+                  <Image url="@iconfinder_Technology_Mix_-_Final-14_998665.png" />
+               </image>
+               <effect>
+                  <Glow>
+                     <input>
+                        <ColorAdjust brightness="1.0" />
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="logout" layoutX="600.0" layoutY="144.0" opacity="0.0" text="jaduu" textFill="#2a68bf" />
+   </children>
+</AnchorPane>

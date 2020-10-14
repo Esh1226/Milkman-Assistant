@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutUs.AboutUsViewController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="200.0" layoutX="86.0" layoutY="142.0" pickOnBounds="true">
+         <image>
+            <Image url="@IMG-20180123-WA0064.jpg" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="276.0" layoutY="6.0" prefHeight="73.0" prefWidth="229.0" style="-fx-background-color: Royalblue;" text="About Us" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="41.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="185.0" fitWidth="200.0" layoutX="86.0" layoutY="427.0" pickOnBounds="true">
+         <image>
+            <Image url="@Rajesh%20sir.jpg" />
+         </image></ImageView>
+      <Label layoutX="348.0" layoutY="142.0" prefHeight="185.0" prefWidth="342.0" style="-fx-background-color: light blue;" text="My name is Eshant. I am 21 years old.About my Software:A platform for dairies or milk brands to help you get rid of that painful task of using excel to do just about everything." textFill="ROYALBLUE" wrapText="true">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="427.0" prefHeight="185.0" prefWidth="342.0" style="-fx-background-color: light blue;" text="My mentor is Mr.Rajesh Bansal. He is the founder and owner of Banglore Computer Education (BCE) and training head at Sun-Soft Technologies(SST)-India." textFill="ROYALBLUE" wrapText="true">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

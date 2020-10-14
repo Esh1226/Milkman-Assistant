@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillPayment.BillPaymentViewController">
+   <children>
+      <ComboBox fx:id="comboid" editable="true" layoutX="257.0" layoutY="92.0" onAction="#doFetchWithCombo" prefHeight="38.0" prefWidth="266.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <Label layoutX="61.0" layoutY="92.0" prefHeight="38.0" prefWidth="164.0" text="Customer Name" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label layoutX="61.0" layoutY="168.0" prefHeight="38.0" prefWidth="164.0" text="Bill From " textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label layoutX="61.0" layoutY="243.0" prefHeight="38.0" prefWidth="164.0" text="Bill to" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label layoutX="61.0" layoutY="466.0" prefHeight="38.0" prefWidth="177.0" text="Amount" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label alignment="CENTER" layoutX="257.0" layoutY="297.0" prefHeight="25.0" prefWidth="123.0" text="Cow Milk " textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label alignment="CENTER" layoutX="400.0" layoutY="298.0" prefHeight="25.0" prefWidth="123.0" text="Buffalo Milk" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label layoutX="61.0" layoutY="323.0" prefHeight="38.0" prefWidth="151.0" text="Total Quantity" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <RadioButton fx:id="rd1" layoutX="259.0" layoutY="396.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="74.0" text="Cash" textFill="ROYALBLUE">
+         <toggleGroup>
+            <ToggleGroup fx:id="payment" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </RadioButton>
+      <RadioButton fx:id="rd2" layoutX="400.0" layoutY="396.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Cheque" textFill="ROYALBLUE" toggleGroup="$payment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></RadioButton>
+      <Label layoutX="61.0" layoutY="396.0" prefHeight="38.0" prefWidth="164.0" text="Payment Mode" textFill="ROYALBLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <TextField fx:id="txtSD" layoutX="257.0" layoutY="168.0" prefHeight="38.0" prefWidth="266.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="txtED" layoutX="257.0" layoutY="243.0" prefHeight="38.0" prefWidth="266.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="txtCQty" layoutX="257.0" layoutY="322.0" prefHeight="38.0" prefWidth="123.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="txtBQty" layoutX="400.0" layoutY="323.0" prefHeight="38.0" prefWidth="123.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="txtAmnt" layoutX="257.0" layoutY="467.0" prefHeight="38.0" prefWidth="266.0" style="-fx-border-color: royalblue;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Label alignment="CENTER" layoutX="165.0" layoutY="5.0" prefHeight="68.0" prefWidth="275.0" style="-fx-background-color: royalblue; -fx-background-radius: 20;" text="Bill Payment" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="45.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button layoutX="61.0" layoutY="540.0" mnemonicParsing="false" onAction="#doPay" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: royalblue; -fx-background-radius: 40;" text="PAY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="373.0" layoutY="540.0" mnemonicParsing="false" onAction="#doExit" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: royalblue; -fx-background-radius: 40;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="218.0" layoutY="540.0" mnemonicParsing="false" onAction="#doNew" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: royalblue; -fx-background-radius: 40;" text="NEW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Separator layoutX="39.0" layoutY="73.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="40.0" layoutY="589.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="40.0" layoutY="74.0" orientation="VERTICAL" prefHeight="515.0" prefWidth="6.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="545.0" layoutY="75.0" orientation="VERTICAL" prefHeight="515.0" prefWidth="6.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="41.0" layoutY="523.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="40.0" layoutY="146.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="41.0" layoutY="221.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="43.0" layoutY="293.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="43.0" layoutY="379.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="40.0" layoutY="445.0" prefHeight="3.0" prefWidth="510.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+      <Separator layoutX="209.0" layoutY="73.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="6.0" style="-fx-background-color: royalblue;">
+         <effect>
+            <Glow />
+         </effect></Separator>
+   </children>
+</AnchorPane>
