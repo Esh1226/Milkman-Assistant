@@ -10,9 +10,9 @@ public class smsDone_new {
 
     public static void main(String[] args) 
     {        
-    	String m="Banglore Computer Edu.: * Registration Open for DEC-2017 batches * Learn: ANDROID, JAVA, C Plus Plus.";
+    	String m="";// Your message
     	
-    	String resp=SST_SMS.bceSunSoftSend("9465208070", m);
+    	String resp=SST_SMS.bceSunSoftSend("Mobile Number to which you want send sms", m);
     	System.out.println(resp);
     	
     	if(resp.indexOf("Exception")!=-1)
